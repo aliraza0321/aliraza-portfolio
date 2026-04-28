@@ -1,4 +1,3 @@
-﻿ // ================= SMOOTH SCROLL =================
 document.querySelectorAll("a[href^='#']").forEach(link => {
     link.addEventListener("click", function(e) {
         e.preventDefault();
@@ -11,7 +10,6 @@ document.querySelectorAll("a[href^='#']").forEach(link => {
 });
 
 
-// ================= ACTIVE NAVBAR =================
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll("nav a");
 
@@ -34,7 +32,6 @@ window.addEventListener("scroll", () => {
 });
 
 
-// ================= SCROLL ANIMATION =================
 const elements = document.querySelectorAll(".fade-in");
 
 const revealOnScroll = () => {
@@ -52,7 +49,6 @@ window.addEventListener("scroll", revealOnScroll);
 revealOnScroll(); // run on load
 
 
-// ================= NAVBAR SHADOW =================
 const header = document.querySelector("header");
 
 window.addEventListener("scroll", () => {
@@ -64,7 +60,6 @@ window.addEventListener("scroll", () => {
 });
 
 
-// ================= SCROLL TO TOP BUTTON =================
 const scrollBtn = document.createElement("button");
 scrollBtn.innerText = "↑";
 scrollBtn.classList.add("scroll-top");
@@ -86,7 +81,6 @@ scrollBtn.addEventListener("click", () => {
 });
 
 
-// ================= BUTTON RIPPLE EFFECT =================
 const buttons = document.querySelectorAll(".btn");
 
 buttons.forEach(btn => {
@@ -102,4 +96,10 @@ buttons.forEach(btn => {
 
         setTimeout(() => circle.remove(), 500);
     });
+});
+const toggle = document.getElementById("menu-toggle");
+const navMenu = document.querySelector("nav ul");
+
+toggle.addEventListener("click", () => {
+    navMenu.classList.toggle("show");
 });
