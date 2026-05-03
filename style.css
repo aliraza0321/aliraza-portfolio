@@ -1,5 +1,5 @@
   /* Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap');
 
 * {
     margin: 0;
@@ -12,18 +12,20 @@ body {
     color: #0f172a;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
-    font-size: 18px;
+    font-size: 17px;
+    line-height: 1.6;
 }
 
 header {
     position: fixed;
     width: 100%;
     top: 0;
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255,255,255,0.8);
     backdrop-filter: blur(10px);
-    padding: 15px 40px;
+    padding: 14px 40px;
     z-index: 1000;
-    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+    transition: 0.3s;
 }
 
 nav {
@@ -34,7 +36,7 @@ nav {
 
 .logo {
     font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: 600;
     color: #2563eb;
 }
 
@@ -50,7 +52,7 @@ nav li {
 nav a {
     text-decoration: none;
     color: #0f172a;
-    font-size: 1rem;
+    font-size: 0.95rem;
     transition: 0.3s;
 }
 
@@ -64,48 +66,50 @@ nav a.active {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 120px 40px 40px;
-    background: linear-gradient(135deg, #e0f2fe, #f8fafc);
+    padding: 120px 40px 60px;
+    background: linear-gradient(135deg, #eaf2ff, #f8fafc);
 }
 
 .hero-content {
-    max-width: 550px;
+    max-width: 500px;
+    text-align: center;
 }
 
 .hero h1 {
-    font-size: 3rem;
-    font-weight: 700;
+    font-size: 2.6rem;
+    font-weight: 600;
 }
 
 .hero h1 span {
     background: linear-gradient(90deg, #2563eb, #38bdf8);
-    background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .hero p {
     margin-top: 10px;
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     color: #475569;
 }
 
 /* Buttons */
 .buttons {
-    margin-top: 25px;
+    margin-top: 20px;
     display: flex;
-    gap: 15px;
+    justify-content: center;
+    gap: 12px;
     flex-wrap: wrap;
 }
 
 .btn {
-    padding: 12px 25px;
-    font-size: 1rem;
+    padding: 10px 22px;
+    font-size: 0.95rem;
     background: #2563eb;
     color: white;
-    border-radius: 10px;
+    border-radius: 8px;
     text-decoration: none;
-    transition: 0.3s;
-    box-shadow: 0 5px 15px rgba(37,99,235,0.3);
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 12px rgba(37,99,235,0.25);
 }
 
 .btn:hover {
@@ -117,118 +121,100 @@ nav a.active {
     background: #16a34a;
 }
 
-/* Profile Image */
+/* Image */
 .hero-image img {
-    width: 250px;
+    width: 230px;
     border-radius: 50%;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
     animation: float 4s ease-in-out infinite;
 }
 
-/* Animation */
 @keyframes float {
     0%,100% { transform: translateY(0); }
-    50% { transform: translateY(-15px); }
+    50% { transform: translateY(-10px); }
 }
 
 section {
     padding: 90px 40px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
 h2 {
-    font-size: 2.2rem;
-    margin-bottom: 20px;
+    font-size: 1.9rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
 }
 
 p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #475569;
 }
 
-.about p {
-    max-width: 700px;
+.about {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 40px;
+    max-width: 850px;
     margin: auto;
-    margin-top: 20px;
-    line-height: 1.7;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.05);
 }
 
 .skills-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
-    margin-top: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
 }
 
 .skill-group {
     background: white;
-    padding: 20px;
-    border-radius: 15px;
+    padding: 18px;
+    border-radius: 10px;
     border: 1px solid rgba(0,0,0,0.05);
-    transition: 0.3s;
+    text-align: center;
+    transition: 0.25s;
 }
 
 .skill-group:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.06);
 }
 
 .skill-group h3 {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     color: #2563eb;
-    text-align: left;
 }
 
 .skills-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    justify-content: flex-start;
+    justify-content: center;
+    gap: 8px;
 }
 
 .skill {
-    padding: 10px 18px;
-    background: #f1f5f9;
-    border-radius: 20px;
-    font-size: 0.9rem;
-    transition: 0.3s;
+    padding: 7px 14px;
+    background: #eef2ff;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    transition: 0.25s;
 }
 
 .skill:hover {
     background: #2563eb;
     color: white;
-    transform: scale(1.05);
 }
 
-.project-container {
+.project-container,
+.cert-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
-    margin-top: 40px;
-}
-
-.project-card {
-    background: white;
-    padding: 25px;
-    border-radius: 15px;
-    transition: 0.3s;
-    border: 1px solid rgba(0,0,0,0.05);
-}
-
-.project-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-}
-
-.project-card p {
-    margin-top: 10px;
-}
-
-.project-card a {
-    display: inline-block;
-    margin-top: 10px;
-    color: #2563eb;
-    text-decoration: none;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
 }
 
 .education-container {
@@ -238,61 +224,43 @@ p {
     gap: 20px;
 }
 
-.edu-card {
-    background: white;
-    padding: 20px;
-    border-radius: 15px;
-    width: 280px;
-    border: 1px solid rgba(0,0,0,0.05);
-    transition: 0.3s;
-}
-
-.edu-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
-}
-
-.cert-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
-}
-
+.project-card,
+.edu-card,
 .cert-card {
     background: white;
-    padding: 15px;
-    border-radius: 15px;
-    transition: 0.3s;
-    border: 1px solid rgba(0,0,0,0.05);
-}
-
-.cert-card img {
-    width: 100%;
+    padding: 18px;
     border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.05);
+    text-align: center;
+    transition: 0.25s;
 }
 
+.project-card:hover,
+.edu-card:hover,
 .cert-card:hover {
-    transform: scale(1.05);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.06);
 }
 
 .contact-box {
-    margin-top: 20px;
-    line-height: 2;
+    margin-top: 15px;
+    font-size: 1rem;
+    line-height: 1.8;
 }
 
 footer {
-    background: #ffffff;
+    background: white;
     text-align: center;
-    padding: 20px;
+    padding: 18px;
     border-top: 1px solid #e2e8f0;
-    margin-top: 40px;
-    font-size: 0.9rem;
+    margin-top: 30px;
+    font-size: 0.85rem;
 }
 
 .fade-in {
     opacity: 0;
-    transform: translateY(40px);
-    transition: 1s;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
 }
 
 .fade-in.show {
@@ -302,31 +270,41 @@ footer {
 
 .scroll-top {
     position: fixed;
-    bottom: 30px;
-    right: 30px;
+    bottom: 20px;
+    right: 20px;
     background: #2563eb;
     color: white;
     border: none;
-    padding: 10px 15px;
+    padding: 8px 12px;
     border-radius: 50%;
     cursor: pointer;
-    display: none;
 }
 
 .menu-toggle {
     display: none;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     cursor: pointer;
 }
 
-@media (max-width: 600px) {
-
-    .menu-toggle {
-        display: block;
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
     }
 
-    nav {
-        position: relative;
+    .hero h1 {
+        font-size: 2.1rem;
+    }
+
+    section {
+        padding: 70px 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .menu-toggle {
+        display: block;
     }
 
     nav ul {
@@ -339,8 +317,7 @@ footer {
         align-items: center;
         gap: 20px;
         padding: 20px 0;
-
-        display: none; 
+        display: none;
         box-shadow: 0 10px 20px rgba(0,0,0,0.1);
     }
 
