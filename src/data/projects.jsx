@@ -39,12 +39,28 @@
     github: "https://github.com/aliraza0321",
     demo: "https://employee-management-app-orpin-seven.vercel.app/",
   },
-  {
+{
     title: "Receipt Calculator App",
     description:
       "A billing and receipt generation tool that automates itemized calculations, built with JavaScript for fast, dependency-free client-side processing.",
     tags: ["JavaScript", "HTML", "CSS"],
     github: "https://github.com/aliraza0321",
     demo: "https://receipt-bill-calculator-app.vercel.app/",
+  },
+  {
+    title: "MediFlow System",
+    description:
+      "A full-stack web application designed to streamline and digitize hospital operations. It manages patient records, scheduling appointments, handling prescriptions, managing hospital staff, and tracking medicine inventory.",
+    tags: ["Full Stack", "Hospital Management", "Database", "Web App"],
+    github: "https://github.com/aliraza0321/Mediflow-system",
+    demo: "",
+  },
+  {
+    title: "Moving Star Assembly Program",
+    description:
+      "An assembly language program built for DOSBox that animates a moving star on the screen, demonstrating low-level graphics, interrupts, and system-level programming concepts.",
+    tags: ["Assembly", "DOSBox", "Low-Level", "Graphics"],
+    github: "https://github.com/aliraza0321",
+    demo: "",
   },
 ];
