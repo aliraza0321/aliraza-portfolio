@@ -7,22 +7,7 @@
     github: "https://github.com/aliraza0321",
     demo: "https://emotion-detection-system-pryamhevxcxvxkfj97sl6p.streamlit.app/",
   },
-  {
-    title: "Hospital Management System",
-    description:
-      "A full-stack hospital and patient management platform supporting role-based access, patient records, and administrative workflows. Built with a React front end, Node.js back end, and SQL data layer.",
-    tags: ["React", "Node.js", "SQL", "Role-Based Access"],
-    github: "https://github.com/aliraza0321",
-    demo: "",
-  },
-  {
-    title: "Hostel Booking Cancellation Prediction",
-    description:
-      "A machine learning model that predicts the likelihood of hostel booking cancellations from historical booking data, applying feature engineering and classification techniques to support data-driven decision-making.",
-    tags: ["Python", "Scikit-Learn", "Pandas", "Classification"],
-    github: "https://github.com/aliraza0321",
-    demo: "",
-  },
+ 
   {
     title: "Spam Detection System",
     description:
@@ -38,6 +23,14 @@
     tags: ["JavaScript", "CRUD", "Responsive Design"],
     github: "https://github.com/aliraza0321",
     demo: "https://employee-management-app-orpin-seven.vercel.app/",
+  },
+  {
+    title: "Titanic Survival Prediction",
+    description:
+      "A predictive model that estimates the survival probability of passengers aboard the Titanic, utilizing historical data and machine learning classification algorithms to analyze factors influencing survival rates.",
+    tags: ["Python", "Scikit-Learn", "Pandas", "Classification"],
+    github: "https://github.com/aliraza0321/titanic-survival-prediction",
+    demo:"https://titanic-survival-prediction-ce83x7bptpi9vgn3kgttyy.streamlit.app/",
   },
 {
     title: "Receipt Calculator App",
@@ -55,12 +48,14 @@
     github: "https://github.com/aliraza0321/Mediflow-system",
     demo: "",
   },
+   
   {
-    title: "Moving Star Assembly Program",
+    title: "Hostel Booking Cancellation Prediction",
     description:
-      "An assembly language program built for DOSBox that animates a moving star on the screen, demonstrating low-level graphics, interrupts, and system-level programming concepts.",
-    tags: ["Assembly", "DOSBox", "Low-Level", "Graphics"],
-    github: "https://github.com/aliraza0321",
+      "A machine learning model that predicts the likelihood of hostel booking cancellations from historical booking data, applying feature engineering and classification techniques to support data-driven decision-making.",
+    tags: ["Python", "Scikit-Learn", "Pandas", "Classification"],
+    github: "https://github.com/aliraza0321/hotel-booking-cancellation-prediction",
     demo: "",
-  },
+  }
+  
 ];
